@@ -18,7 +18,14 @@ dependencies:
   # - julia 
   # - pip
   # - pip: # if there is a package available via pip but not with conda, can import like this:
-  # - r
-  # - r-yaml # import r packages by prepending with "r-"
-  # - r-nicheROVER
-  # - r-tidyverse
+  - r
+  - r-tidyverse
+  - r-dplyr
+  - r-irkernel
+  - r-caret
+  - r-ggplot2
+  - r-zipcoder
+  - r-viridis
+  - r-ggthemes
+  - r-ggtext
+  - r-ggmap

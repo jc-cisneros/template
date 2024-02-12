@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------
+Makelog started: 2024-02-12 00:47:14
+Working directory: /Users/jccp/Desktop/template/analysis/descriptive
+--------------------------------------------------------------------------------
+Input links successfully created!
+External links successfully created!
+Source logs successfully written!
+WARNING! The following target files have been modified according to git status:
+/Users/jccp/Desktop/template/data/output/sim_data.csv
+Version logs successfully written!
+Executing command: `Rscript --no-save "/Users/jccp/Desktop/template/analysis/descriptive/code/create_plots.R"`
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: viridisLite
+Linking to GEOS 3.12.1, GDAL 3.8.3, PROJ 9.3.1; sf_use_s2() is TRUE
+
+Executing command: `Rscript --no-save "/Users/jccp/Desktop/template/analysis/descriptive/code/export_beamer.R"`
+[1] "LaTeX Beamer presentation successfully created!"
+[1] "PDF successfully created!"
+
+Output logs successfully written!
+WARNING! Certain files tracked by git exceed the config size limit (0.5 MB). See below for list of files.
+/Users/jccp/Desktop/template/analysis/descriptive/output/descriptive_plots.pdf
+--------------------------------------------------------------------------------
+Makelog ended: 2024-02-12 00:47:25
+Working directory: /Users/jccp/Desktop/template/analysis/descriptive
+--------------------------------------------------------------------------------

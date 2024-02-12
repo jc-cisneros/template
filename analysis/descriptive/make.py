@@ -5,7 +5,7 @@ import os
 import sys
 
 ### LOAD GSLAB MAKE
-ROOT = '..'
+ROOT = '../..'
 gslm_path = os.path.join(ROOT, 'lib', 'gslab_make')
 
 sys.path.append(gslm_path)
@@ -21,8 +21,6 @@ PATHS = gs.update_internal_paths(PATHS)
 ### LOAD CONFIG USER 
 PATHS = gs.update_external_paths(PATHS)
 gs.update_executables(PATHS)
-
-print(PATHS)
 
 ############
 ### MAKE ###
@@ -43,7 +41,8 @@ gs.get_modified_sources(PATHS, inputs + externals)
 gs.write_version_logs(PATHS)
 
 ### RUN SCRIPTS
-gs.run_r(PATHS, 'code/simulate_data.R')
+gs.run_r(PATHS, 'code/create_plots.R')
+gs.run_r(PATHS, 'code/export_beamer.R')
 
 ### LOG OUTPUTS
 gs.log_files_in_output(PATHS)
